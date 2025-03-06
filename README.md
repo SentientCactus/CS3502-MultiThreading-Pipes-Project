@@ -29,7 +29,7 @@ Part A demonstrates:
 3. Use the command:
 
 ```bash
- dotnet run threads
+ dotnet run
 ```
 
 4. Follow the on-screen menu to run each phase.
