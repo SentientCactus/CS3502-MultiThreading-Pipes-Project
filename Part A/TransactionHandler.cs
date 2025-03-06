@@ -132,9 +132,9 @@ public class TransactionHandler {
 
         //The try/finally statement that handles the transfer logic and makes sure the locks can be unlocked in the event of faliure
         try {
-            Console.WriteLine("Thread " + threadName + " is trying to access account " + accountOne.accountName);
+            Console.WriteLine("Thread " + threadName + " is trying to access account " + first.accountName);
             lockOne = first.TryLock();
-            Console.WriteLine("Thread " + threadName + " is trying to access account " + accountTwo.accountName);
+            Console.WriteLine("Thread " + threadName + " is trying to access account " + second.accountName);
             lockTwo = second.TryLock();
 
             //Checks to see if it has aquired both locks
